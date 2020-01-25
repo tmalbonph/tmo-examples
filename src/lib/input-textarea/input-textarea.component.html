@@ -1,0 +1,31 @@
+<div class="example-field-max-rows">
+  <mat-form-field>
+    <textarea
+      matInput
+      #message3
+      placeholder="Leave a comment"
+      maxlength="60"
+      cdkTextareaAutosize
+      #autosize="cdkTextareaAutosize"
+      cdkAutosizeMinRows="1"
+      cdkAutosizeMaxRows="4"
+    >
+    </textarea>
+    <mat-hint align="end"> {{ message3.value.length }} / {{ message3.maxLength }} </mat-hint>
+  </mat-form-field>
+  <mat-form-field>
+    <textarea
+      matInput
+      #message3
+      placeholder="Leave a comment"
+      maxlength="60"
+      cdkTextareaAutosize
+      #autosize="cdkTextareaAutosize"
+      cdkAutosizeMinRows="1"
+      cdkAutosizeMaxRows="4"
+      [disabled]="true"
+    >
+    </textarea>
+    <mat-hint align="end"> {{ message3.value.length }} / {{ message3.maxLength }} </mat-hint>
+  </mat-form-field>
+</div>

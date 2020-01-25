@@ -1,0 +1,42 @@
+<div class="example-field-hint">
+  <mat-form-field>
+    <input matInput color="primary" ngModel #email="ngModel" placeholder="Enter an email" name="email" required />
+    <mat-hint align="start" class="indicator">
+      <span>Required</span>
+    </mat-hint>
+    <mat-error *ngIf="email.invalid && email.errors['required']" fxLayoutAlign="space-between start" class="indicator">
+      <span>Error: This is a required field</span>
+      <span><mat-icon matListIcon color="warn" svgIcon="alert-outline"></mat-icon></span>
+    </mat-error>
+    <mat-hint align="end" class="indicator success">
+      <span><mat-icon matListIcon class="success mat-icon" svgIcon="checkbox-marked-circle-outline"></mat-icon></span>
+    </mat-hint>
+  </mat-form-field>
+  <h4>Disabled:</h4>
+  <mat-form-field>
+    <input
+      matInput
+      color="primary"
+      ngModel
+      #disabledEmail="ngModel"
+      placeholder="Enter an email"
+      name="email"
+      [disabled]="true"
+      required
+    />
+    <mat-hint align="start" class="indicator">
+      <span>Required</span>
+    </mat-hint>
+    <mat-error
+      *ngIf="disabledEmail.invalid && disabledEmail.errors['required']"
+      fxLayoutAlign="space-between start"
+      class="indicator"
+    >
+      <span>Error: This is a required field</span>
+      <span><mat-icon matListIcon color="warn" svgIcon="alert-outline"></mat-icon></span>
+    </mat-error>
+    <mat-hint align="end" class="indicator success">
+      <span><mat-icon matListIcon class="success mat-icon" svgIcon="checkbox-marked-circle-outline"></mat-icon></span>
+    </mat-hint>
+  </mat-form-field>
+</div>

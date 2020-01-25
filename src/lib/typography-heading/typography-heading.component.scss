@@ -1,0 +1,10 @@
+@import '../styles/typography';
+
+.example-typography-heading {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-typography-heading span {
+  padding: 10px 0;
+}

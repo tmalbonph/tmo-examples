@@ -1,0 +1,12 @@
+<div class="example-field-selector">
+  <mat-form-field>
+    <mat-select placeholder="Choose one" [(ngModel)]="order">
+      <mat-option *ngFor="let order of orders" [value]="order.id"></mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-select placeholder="Choose one" [(ngModel)]="order" [disabled]="true">
+      <mat-option *ngFor="let order of orders" [value]="order.id"></mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>

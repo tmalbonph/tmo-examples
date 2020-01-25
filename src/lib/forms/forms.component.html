@@ -1,0 +1,77 @@
+<button
+  (click)="restrictedStyleIsOn = !restrictedStyleIsOn"
+  mat-flat-button
+  color="primary"
+>
+  Restricted style
+</button>
+
+<h2>Forms</h2>
+
+<div *ngFor="let theme of themeClasses" [class]="theme">
+  <div class="padding-sm" [class.bg-restricted]="restrictedStyleIsOn">
+    <h3>Contact form</h3>
+    <form *ngIf="contactForm" [formGroup]="contactForm">
+      <mat-form-field [appearance]="restrictedStyleIsOn ? 'fill' : 'standard'">
+        <mat-label>First name</mat-label>
+        <input matInput type="firstName" formControlName="firstName" />
+        <mat-hint>In at tortor non <a>dui bibendum vehicula</a></mat-hint>
+        <mat-error *ngIf="isInvalid(firstName) && firstName.errors.required">
+          First name is required
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field [appearance]="restrictedStyleIsOn ? 'fill' : 'standard'">
+        <mat-label>Last name</mat-label>
+        <input matInput type="lastName" formControlName="lastName" />
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        <mat-error *ngIf="isInvalid(lastName) && lastName.errors.required">
+          Last name is required
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field [appearance]="restrictedStyleIsOn ? 'fill' : 'standard'">
+        <mat-label>Email address</mat-label>
+        <input matInput type="email" formControlName="email" />
+        <mat-error *ngIf="email!.invalid">{{
+          getEmailErrorMessage()
+        }}</mat-error>
+      </mat-form-field>
+
+      <mat-form-field [appearance]="restrictedStyleIsOn ? 'fill' : 'standard'">
+        <mat-label>Input</mat-label>
+        <mat-select placeholder="Select" [disableOptionCentering]="true">
+          <mat-option value="option1">Option 1</mat-option>
+          <mat-option value="option2">Option 2</mat-option>
+          <mat-option value="option3">Option 3</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <h3>Radio buttons</h3>
+      <div class="form-field" appearance="standard">
+        <mat-radio-group aria-label="Select an option">
+          <mat-radio-button value="1">Option 1</mat-radio-button>
+          <mat-radio-button value="2">Option 2</mat-radio-button>
+          <mat-radio-button value="3" disabled>Option 3</mat-radio-button>
+        </mat-radio-group>
+      </div>
+
+      <h3>Checkboxes</h3>
+      <div class="form-field">
+        <mat-checkbox>Option 1</mat-checkbox>
+        <mat-checkbox>Option 2</mat-checkbox>
+        <mat-checkbox disabled>Option 3</mat-checkbox>
+      </div>
+
+      <h3>Slide toggle</h3>
+      <div class="form-field">
+        <mat-slide-toggle>Slide me!</mat-slide-toggle>
+        <mat-slide-toggle disabled>Disabled slide toggle</mat-slide-toggle>
+      </div>
+
+      <button mat-flat-button color="accent">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>

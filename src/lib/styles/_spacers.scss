@@ -1,0 +1,109 @@
+// vertical and horizontal spacers
+
+$tmo-gray20: #e8e8e8;
+
+// Spacers -horizontal and -vertical
+@mixin spacer-h {
+  display: block;
+  width: 100%;
+}
+
+@mixin spacer-v {
+  display: inline-block;
+  height: 1px;
+}
+
+.spacer-h {
+  &-xxs {
+    height: 0.25rem;
+    @include spacer-h();
+  }
+  &-xs {
+    height: 0.5rem;
+    @include spacer-h();
+  }
+
+  &-s {
+    height: 1rem;
+    @include spacer-h();
+  }
+
+  &-m {
+    height: 1.5rem;
+    @include spacer-h();
+  }
+
+  &-l {
+    height: 2rem;
+    @include spacer-h();
+  }
+
+  &-xl {
+    height: 2.5rem;
+    @include spacer-h();
+  }
+
+  &-xxl {
+    height: 3rem;
+    @include spacer-h();
+  }
+
+  &-xxxl {
+    height: 3.5rem;
+    @include spacer-h();
+  }
+}
+
+.spacer-v {
+  &-xxs {
+    width: 0.25rem;
+    @include spacer-v();
+  }
+  &-xs {
+    width: 0.5rem;
+    @include spacer-v();
+  }
+
+  &-s {
+    width: 1rem;
+    @include spacer-v();
+  }
+
+  &-m {
+    width: 1.5rem;
+    @include spacer-v();
+  }
+
+  &-l {
+    width: 2rem;
+    @include spacer-v();
+  }
+
+  &-xl {
+    width: 2.5rem;
+    @include spacer-v();
+  }
+
+  &-xxl {
+    width: 3rem;
+    @include spacer-v();
+  }
+
+  &-xxxl {
+    width: 3.5rem;
+    @include spacer-v();
+  }
+}
+
+.highlight {
+  background-color: $tmo-gray20;
+
+  &--v {
+    background-color: $tmo-gray20;
+    height: 2rem;
+  }
+}
+
+.align {
+  vertical-align: top;
+}

@@ -1,0 +1,9 @@
+@import 'variables';
+
+.bg-restricted {
+  background-color: $tmo-gray10;
+
+  @include for-dark-theme {
+    background-color: $tmo-black;
+  }
+}

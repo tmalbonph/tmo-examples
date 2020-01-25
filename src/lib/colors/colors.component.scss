@@ -1,0 +1,26 @@
+@import 'variables';
+
+.swatch-set {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.swatch {
+  border: solid 1px $tmo-gray30;
+  display: block;
+  position: relative;
+  margin: 0 2rem 2rem 0;
+  padding: 1rem;
+
+  .swatch-color {
+    display: block;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 0.5rem;
+  }
+  .swatch-description {
+    font-size: 14px;
+    display: block;
+    text-align: center;
+  }
+}

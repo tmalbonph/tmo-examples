@@ -1,0 +1,10 @@
+<h2>Colors</h2>
+<ng-container *ngFor="let set of colorSets">
+  <h3>{{ set.name }}</h3>
+  <div class="swatch-set">
+    <div *ngFor="let color of set.colors" class="swatch">
+      <div class="swatch-color bg-{{ color }}"></div>
+      <div class="swatch-description">{{ color }}</div>
+    </div>
+  </div>
+</ng-container>

@@ -1,0 +1,63 @@
+<h2>Icons</h2>
+
+<h3>Arrows</h3>
+<mat-grid-list
+  class="icon-demo-grid"
+  cols="3"
+  rowHeight="100px"
+  gutterSize="8px"
+>
+  <mat-grid-tile *ngFor="let icon of arrowIcons" [style.background]="'#f8f8f8'">
+    <mat-icon fontSet="material-icons-outlined">{{ icon }}</mat-icon>
+    <code class="icon-name">{{ icon }}</code>
+  </mat-grid-tile>
+</mat-grid-list>
+<p><em>Missing: ios up, ios down (could rotate)</em></p>
+
+<h3>Brand</h3>
+<p><em>Missing: Sprint, T-Mobile</em></p>
+
+<h3>Payment methods</h3>
+
+<h3>Social</h3>
+<p><em>Missing: FaceBook, Twitter, Instagram, YouTube</em></p>
+
+<h3>Fill</h3>
+<mat-grid-list
+  class="icon-demo-grid"
+  cols="3"
+  rowHeight="100px"
+  gutterSize="8px"
+>
+  <mat-grid-tile *ngFor="let icon of fillIcons" [style.background]="'#f8f8f8'">
+    <mat-icon>{{ icon }}</mat-icon>
+    <code class="icon-name">{{ icon }}</code>
+  </mat-grid-tile>
+</mat-grid-list>
+<p>
+  <em
+    >Missing: thicker check (could use 'done'), times circle (could rotate),
+    download, upload</em
+  >
+</p>
+
+<h3>Outline</h3>
+<mat-grid-list
+  class="icon-demo-grid"
+  cols="3"
+  rowHeight="100px"
+  gutterSize="8px"
+>
+  <mat-grid-tile
+    *ngFor="let icon of outlineIcons"
+    [style.background]="'#f8f8f8'"
+  >
+    <mat-icon fontSet="material-icons-outlined">{{ icon }}</mat-icon>
+    <code class="icon-name">{{ icon }}</code>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<h3>Variants</h3>
+
+<h4>Inline <mat-icon inline="true">flag</mat-icon></h4>
+<p>Here's a <mat-icon inline="true">warning</mat-icon> warning.</p>

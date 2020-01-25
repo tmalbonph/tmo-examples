@@ -1,0 +1,419 @@
+@import '~@angular/material/theming';
+/*
+* Contains classes to be used for styling TMO typography.
+* Use these classes when styling text throughout apps.
+*/
+$tmo-gray60: #6a6a6a;
+
+$tele-next-regular: mat-typography-config(
+  $font-family: 'Tele-Grotesk-Next, Arial, Helvetica, "Helvetica Neue", sans-serif',
+  $display-4: mat-typography-level(6rem, 5.5rem, 200),
+  $display-3: mat-typography-level(4.5rem, 4rem, 200),
+  $display-2: mat-typography-level(3.5rem, 3.25rem, 200),
+  $display-1: mat-typography-level(2.5rem, 2.375rem, 200),
+  $headline: mat-typography-level(2rem, 1.875rem, 200),
+  $title: mat-typography-level(1.5rem, 1.5rem, 200)
+);
+
+$tele-next-medium: mat-typography-config(
+  $font-family: 'Tele-Grotesk-Next-Medium, Arial, Helvetica, "Helvetica Neue", sans-serif',
+  $display-4: mat-typography-level(6rem, 5.5rem, 400),
+  $display-3: mat-typography-level(4.5rem, 4rem, 400),
+  $display-2: mat-typography-level(3.5rem, 3.25rem, 400),
+  $display-1: mat-typography-level(2.5rem, 2.375rem, 400),
+  $headline: mat-typography-level(2rem, 1.875rem, 400),
+  $title: mat-typography-level(1.5rem, 1.5rem, 400),
+  $body-1: mat-typography-level(1rem, 1.5rem, 400),
+  $body-2: mat-typography-level(0.825rem, 1rem, 400)
+);
+
+$tele-next-ultra: mat-typography-config(
+  $font-family: 'Tele-Grotesk-Next-Ultra, Arial, Helvetica, "Helvetica Neue", sans-serif',
+  $display-4: mat-typography-level(6rem, 5.5rem, 800),
+  $display-3: mat-typography-level(4.5rem, 4rem, 800),
+  $display-2: mat-typography-level(3.5rem, 3.25rem, 800),
+  $display-1: mat-typography-level(2.5rem, 2.375rem, 800),
+  $headline: mat-typography-level(2rem, 1.875rem, 800),
+  $title: mat-typography-level(1.5rem, 1.5rem, 800),
+  $subheading-1: mat-typography-level(1rem, 1.125rem, 800)
+);
+
+$tele-next-bold: mat-typography-config(
+  $font-family: 'Tele-Grotesk-Next-Bold, Arial, Helvetica, "Helvetica Neue", sans-serif',
+  $display-4: mat-typography-level(6rem, 5.5rem, 700),
+  $display-3: mat-typography-level(4.5rem, 4rem, 700),
+  $display-2: mat-typography-level(3.5rem, 3.25rem, 700),
+  $display-1: mat-typography-level(2.5rem, 2.375rem, 700),
+  $headline: mat-typography-level(2rem, 1.875rem, 700),
+  $title: mat-typography-level(1.5rem, 1.5rem, 700),
+  $body-1: mat-typography-level(1rem, 1.5rem, 700),
+  $body-2: mat-typography-level(0.825rem, 1rem, 700)
+);
+
+// Mobile Typography Config
+
+$tele-next-regular-m: mat-typography-config(
+  $font-family: 'Tele-Grotesk-Next, Arial, Helvetica, "Helvetica Neue", sans-serif',
+  $display-4: mat-typography-level(3.5rem, 3.875rem, 200),
+  $display-3: mat-typography-level(2.5rem, 2.714rem, 200),
+  $display-2: mat-typography-level(2rem, 2.143rem, 200),
+  $display-1: mat-typography-level(1.5rem, 1.57rem, 200),
+  $headline: mat-typography-level(1.25rem, 1.125rem, 200),
+  $title: mat-typography-level(1.125rem, 1.125rem, 200),
+  $subheading-1: mat-typography-level(0.875rem, 1rem, 200)
+);
+
+$tele-next-medium-m: mat-typography-config(
+  $font-family: 'Tele-Grotesk-Next-Medium, Arial, Helvetica, "Helvetica Neue", sans-serif',
+  $display-4: mat-typography-level(3.5rem, 3.875rem, 400),
+  $display-3: mat-typography-level(2.5rem, 2.714rem, 400),
+  $display-2: mat-typography-level(2rem, 2.143rem, 400),
+  $display-1: mat-typography-level(1.5rem, 1.57rem, 400),
+  $headline: mat-typography-level(1.25rem, 1.125rem, 400),
+  $title: mat-typography-level(1.125rem, 1.125rem, 400),
+  $body-1: mat-typography-level(0.875, 1.25rem, 400)
+);
+
+$tele-next-bold-m: mat-typography-config(
+  $font-family: 'Tele-Grotesk-Next-Bold, Arial, Helvetica, "Helvetica Neue", sans-serif',
+  $display-4: mat-typography-level(3.5rem, 3.875rem, 700),
+  $display-3: mat-typography-level(2.5rem, 2.714rem, 700),
+  $display-2: mat-typography-level(2rem, 2.143rem, 700),
+  $display-1: mat-typography-level(1.5rem, 1.57rem, 700),
+  $headline: mat-typography-level(1.25rem, 1.125rem, 700),
+  $title: mat-typography-level(1.125rem, 1.125rem, 700),
+  $subheading-1: mat-typography-level(0.875rem, 1rem, 700),
+  $body-1: mat-typography-level(0.875rem, 1.25rem, 700)
+);
+
+$tele-next-ultra-m: mat-typography-config(
+  $font-family: 'Tele-Grotesk-Next-Ultra, Arial, Helvetica, "Helvetica Neue", sans-serif',
+  $display-4: mat-typography-level(3.5rem, 3.875rem, 800),
+  $display-3: mat-typography-level(2.5rem, 2.714rem, 800),
+  $display-2: mat-typography-level(2rem, 2.143rem, 800),
+  $display-1: mat-typography-level(1.5rem, 1.57rem, 800),
+  $headline: mat-typography-level(1.25rem, 1.125rem, 800),
+  $title: mat-typography-level(1.125rem, 1.125rem, 800),
+  $subheading-1: mat-typography-level(0.875rem, 1rem, 800)
+);
+
+$arial: mat-typography-config(
+  $font-family: 'Arial, Helvetica, "Helvetica Neue", sans-serif',
+  $body-1: mat-typography-level(1rem, 1.5rem, 400),
+  $body-2: mat-typography-level(0.825rem, 1rem, 400)
+);
+
+$arial-bold: mat-typography-config(
+  $font-family: 'Arial, Helvetica, "Helvetica Neue", sans-serif',
+  $body-1: mat-typography-level(1rem, 1.5rem, 700),
+  $body-2: mat-typography-level(0.825rem, 1rem, 400)
+);
+
+.heading-1 {
+  @include mat-typography-level-to-styles($tele-next-medium, display-4);
+  letter-spacing: -0.0625rem;
+}
+
+.heading-2 {
+  @include mat-typography-level-to-styles($tele-next-medium, display-3);
+  letter-spacing: -0.0625rem;
+}
+
+.heading-3 {
+  @include mat-typography-level-to-styles($tele-next-medium, display-2);
+  letter-spacing: -0.0625rem;
+}
+
+.heading-4 {
+  @include mat-typography-level-to-styles($tele-next-medium, display-1);
+  letter-spacing: -0.4px;
+}
+
+.heading-5 {
+  @include mat-typography-level-to-styles($tele-next-medium, headline);
+  letter-spacing: -0.33px;
+}
+
+.heading-6 {
+  @include mat-typography-level-to-styles($tele-next-medium, title);
+  letter-spacing: 0;
+}
+
+.display-1 {
+  @include mat-typography-level-to-styles($tele-next-ultra, display-4);
+  letter-spacing: -0.0625rem;
+}
+
+.display-2 {
+  @include mat-typography-level-to-styles($tele-next-ultra, display-3);
+  letter-spacing: -0.0625rem;
+}
+
+.display-3 {
+  @include mat-typography-level-to-styles($tele-next-ultra, display-2);
+  letter-spacing: -0.0625rem;
+}
+
+.display-4 {
+  @include mat-typography-level-to-styles($tele-next-ultra, display-1);
+  letter-spacing: -0.4px;
+}
+
+.display-5 {
+  @include mat-typography-level-to-styles($tele-next-ultra, headline);
+  letter-spacing: -0.33px;
+}
+
+.display-6 {
+  @include mat-typography-level-to-styles($tele-next-ultra, title);
+  letter-spacing: 0;
+}
+
+.subheading-1 {
+  @include mat-typography-level-to-styles($tele-next-ultra, subheading-1);
+}
+
+.caption {
+  @include mat-typography-level-to-styles($tele-next-ultra, caption);
+}
+
+.eyebrow {
+  @include mat-typography-level-to-styles($tele-next-ultra, subheading-1);
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.eyebrow-m {
+  @include mat-typography-level-to-styles($tele-next-ultra-m, subheading-1);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.body {
+  @include mat-typography-level-to-styles($arial, body-1);
+  letter-spacing: 0;
+
+  &--disabled {
+    @include mat-typography-level-to-styles($arial, body-1);
+    color: $tmo-gray60;
+    font-style: italic;
+    letter-spacing: 0;
+  }
+
+  &--link {
+    @include mat-typography-level-to-styles($arial, body-1);
+    letter-spacing: 0;
+    text-decoration: underline;
+  }
+
+  &--bold {
+    @include mat-typography-level-to-styles($arial-bold, body-1);
+    letter-spacing: 0;
+  }
+
+  &--link--bold {
+    @include mat-typography-level-to-styles($arial-bold, body-1);
+    letter-spacing: 0;
+    text-decoration: underline;
+  }
+}
+// these two classes, body--medium and body--small, 14px and 12px respectively are used to accommodate the comps as of April 15, 2019
+// they should be removed if not needed when GLUE is finalized.
+
+.body--medium {
+  @include mat-typography-level-to-styles($arial, body-1);
+  font-size: 0.875rem;
+  line-height: 1rem;
+  letter-spacing: 0;
+
+  &--disabled {
+    @include mat-typography-level-to-styles($arial, body-1);
+    color: $tmo-gray60;
+    font-style: italic;
+    letter-spacing: 0;
+  }
+
+  &--link {
+    @include mat-typography-level-to-styles($arial, body-1);
+    letter-spacing: 0;
+    text-decoration: underline;
+  }
+
+  &--bold {
+    @include mat-typography-level-to-styles($arial-bold, body-1);
+    letter-spacing: 0;
+  }
+
+  &--link--bold {
+    @include mat-typography-level-to-styles($arial-bold, body-1);
+    letter-spacing: 0;
+    text-decoration: underline;
+  }
+}
+
+.body--small {
+  @include mat-typography-level-to-styles($arial, body-1);
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  letter-spacing: 0;
+
+  &--disabled {
+    @include mat-typography-level-to-styles($arial, body-1);
+    color: $tmo-gray60;
+    font-style: italic;
+    letter-spacing: 0;
+  }
+
+  &--link {
+    @include mat-typography-level-to-styles($arial, body-1);
+    letter-spacing: 0;
+    text-decoration: underline;
+  }
+
+  &--bold {
+    @include mat-typography-level-to-styles($arial-bold, body-1);
+    letter-spacing: 0;
+  }
+
+  &--link--bold {
+    @include mat-typography-level-to-styles($arial-bold, body-1);
+    letter-spacing: 0;
+    text-decoration: underline;
+  }
+}
+
+// Responsive Mobile Font Classes
+
+@media (max-width: 850px) {
+  // Mobile Font Classes
+  .heading-1 {
+    @include mat-typography-level-to-styles($tele-next-medium-m, display-4);
+    letter-spacing: -1.1px;
+  }
+
+  .heading-2 {
+    @include mat-typography-level-to-styles($tele-next-medium-m, display-3);
+    letter-spacing: -0.4px;
+  }
+
+  .heading-3 {
+    @include mat-typography-level-to-styles($tele-next-medium-m, display-2);
+    letter-spacing: -0.33px;
+  }
+
+  .heading-4 {
+    @include mat-typography-level-to-styles($tele-next-medium-m, display-1);
+    letter-spacing: -0.25px;
+  }
+
+  .heading-5 {
+    @include mat-typography-level-to-styles($tele-next-medium-m, headline);
+    letter-spacing: 0;
+  }
+
+  .heading-6 {
+    @include mat-typography-level-to-styles($tele-next-medium-m, title);
+    letter-spacing: 0;
+  }
+
+  .display-1 {
+    @include mat-typography-level-to-styles($tele-next-ultra-m, display-4);
+    letter-spacing: -1.1px;
+  }
+
+  .display-2 {
+    @include mat-typography-level-to-styles($tele-next-ultra-m, display-3);
+    letter-spacing: -0.4px;
+  }
+
+  .display-3 {
+    @include mat-typography-level-to-styles($tele-next-ultra-m, display-2);
+    letter-spacing: -0.33px;
+  }
+
+  .display-4 {
+    @include mat-typography-level-to-styles($tele-next-ultra-m, display-1);
+    letter-spacing: -0.25px;
+  }
+
+  .display-5 {
+    @include mat-typography-level-to-styles($tele-next-ultra-m, headline);
+    letter-spacing: 0;
+  }
+
+  .display-6 {
+    @include mat-typography-level-to-styles($tele-next-ultra-m, title);
+    letter-spacing: 0;
+  }
+
+  .eyebrow {
+    @include mat-typography-level-to-styles($tele-next-ultra-m, subheading-1);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  .body {
+    @include mat-typography-level-to-styles($arial, body-1);
+    font-size: 0.875rem;
+    letter-spacing: 0;
+
+    &--disabled {
+      @include mat-typography-level-to-styles($arial, body-1);
+      color: $tmo-gray60;
+      font-size: 0.875rem;
+      font-style: italic;
+    }
+
+    &--link {
+      @include mat-typography-level-to-styles($arial, body-1);
+      // color: $tmo-black;
+      font-size: 0.875rem;
+      text-decoration: underline;
+    }
+
+    &--bold {
+      @include mat-typography-level-to-styles($arial-bold, body-1);
+      font-size: 0.875rem;
+      // color: $tmo-black;
+    }
+
+    &--link--bold {
+      @include mat-typography-level-to-styles($arial-bold, body-1);
+      font-size: 0.875rem;
+      // color: $tmo-black;
+      text-decoration: underline;
+    }
+  }
+}
+
+// Shared Font Classes
+.legal {
+  @include mat-typography-level-to-styles($arial, body-2);
+  letter-spacing: 0.5px;
+  color: $tmo-gray60;
+
+  &--bold {
+    @include mat-typography-level-to-styles($arial-bold, body-2);
+    color: $tmo-gray60;
+  }
+
+  &--link {
+    @include mat-typography-level-to-styles($arial, body-2);
+    // color: $tmo-black;
+    text-decoration: underline;
+  }
+
+  &--link--bold {
+    @include mat-typography-level-to-styles($arial-bold, body-2);
+    // color: $tmo-black;
+    text-decoration: underline;
+  }
+}

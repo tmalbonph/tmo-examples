@@ -1,0 +1,19 @@
+<div class="example-field-suffix">
+  <mat-form-field>
+    <mat-label>Amount</mat-label>
+    <input matInput />
+    <button mat-icon-button matPrefix>
+      <mat-icon>attach_money</mat-icon>
+    </button>
+    <span matSuffix>USD</span>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Amount</mat-label>
+    <input matInput [disabled]="true" />
+    <button mat-icon-button matPrefix>
+      <mat-icon>attach_money</mat-icon>
+    </button>
+    <span matSuffix>USD</span>
+  </mat-form-field>
+  <h4>Disabled</h4>
+</div>

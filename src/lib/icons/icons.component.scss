@@ -1,0 +1,13 @@
+@import 'variables';
+
+.icon-demo-grid {
+  .mat-grid-tile {
+    .mat-figure {
+      justify-content: flex-start;
+      margin-left: 15%;
+    }
+    mat-icon {
+      margin-right: 1rem;
+    }
+  }
+}

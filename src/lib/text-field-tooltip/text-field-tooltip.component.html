@@ -1,0 +1,21 @@
+<div class="example-field-tooltip">
+  <mat-form-field>
+    <mat-label>First Name</mat-label>
+    <input matInput />
+    <mat-icon matSuffix>
+      <span matTooltip="Suffix" matTooltipPosition="before" matTooltipClass="--before">
+        <em class="material-icons md-18">help</em>
+      </span>
+    </mat-icon>
+  </mat-form-field>
+  <h4>Disabled:</h4>
+  <mat-form-field>
+    <mat-label>First Name</mat-label>
+    <input matInput [disabled]="true" />
+    <mat-icon matSuffix>
+      <span matTooltip="Suffix" matTooltipPosition="before" matTooltipClass="--before">
+        <em class="material-icons md-18">help</em>
+      </span>
+    </mat-icon>
+  </mat-form-field>
+</div>

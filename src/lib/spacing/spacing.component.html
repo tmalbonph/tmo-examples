@@ -1,0 +1,25 @@
+<h2>Spacing</h2>
+
+<p>
+  Here's a number of spacing utilities that you can apply to elements that have
+  spacing that's out of the ordinary.
+</p>
+
+<ng-container *ngFor="let property of spacingProperties">
+  <h3>{{ property }}</h3>
+  <ng-container *ngFor="let size of sizes">
+    <h4>{{ size }}</h4>
+    <div
+      *ngFor="let direction of directionPrefixes"
+      class="spacing-demo-block bg-tmo-magenta-brand"
+    >
+      <div class="{{ property }}{{ direction }}-{{ size }} bg-tmo-gray10">
+        <strong>{{ property }}{{ direction }}-{{ size }}</strong>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, ullam
+        assumenda, praesentium voluptatem, delectus omnis quibusdam magnam rem
+        quisquam velit nesciunt recusandae accusantium iusto reiciendis quasi
+        qui? Nam, earum id.
+      </div>
+    </div>
+  </ng-container>
+</ng-container>

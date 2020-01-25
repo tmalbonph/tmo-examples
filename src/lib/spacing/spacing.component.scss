@@ -1,0 +1,12 @@
+@import 'variables';
+
+.spacing-demo-block {
+  margin-bottom: $spacing-xs;
+  display: flex;
+  position: relative;
+
+  > div {
+    display: block;
+    position: relative;
+  }
+}

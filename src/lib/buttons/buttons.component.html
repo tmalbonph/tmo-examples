@@ -1,0 +1,161 @@
+<h2>Buttons</h2>
+
+<div *ngFor="let theme of themeClasses" [class]="theme">
+  <h3>Flat Buttons (primary style)</h3>
+  <div class="button-row">
+    <button mat-flat-button disableRipple class="cta-button">Basic</button>
+    <button mat-flat-button disableRipple class="cta-button" color="primary">
+      Primary - this is the primary button
+    </button>
+    <button mat-flat-button disableRipple class="cta-button" color="accent">
+      Accent
+    </button>
+    <button
+      mat-flat-button
+      disableRipple
+      class="cta-button"
+      color="accent"
+      disabled
+    >
+      Disabled
+    </button>
+    <a mat-flat-button disableRipple class="cta-button" routerLink=".">Link</a>
+    <a mat-flat-button disableRipple class="cta-button" routerLink="." disabled
+      >Link</a
+    >
+  </div>
+
+  <h4>Full-width</h4>
+  <button mat-flat-button disableRipple class="cta-button full-width">
+    Basic
+  </button>
+  <button
+    mat-flat-button
+    disableRipple
+    class="cta-button full-width"
+    color="primary"
+  >
+    Primary
+  </button>
+  <button
+    mat-flat-button
+    disableRipple
+    class="cta-button full-width"
+    color="accent"
+  >
+    Accent
+  </button>
+  <a mat-flat-button disableRipple class="cta-button full-width" routerLink="."
+    >Link</a
+  >
+
+  <h3>Stroked Buttons (secondary style)</h3>
+  <div class="button-row">
+    <button mat-stroked-button disableRipple class="cta-button">Basic</button>
+    <button mat-stroked-button disableRipple class="cta-button" color="primary">
+      Primary
+    </button>
+    <button mat-stroked-button disableRipple class="cta-button" color="accent">
+      Accent this is a really long button name
+    </button>
+    <button
+      mat-stroked-button
+      disableRipple
+      class="cta-button"
+      color="accent"
+      disabled
+    >
+      Disabled
+    </button>
+    <a mat-stroked-button disableRipple class="cta-button" routerLink="."
+      >Link</a
+    >
+    <a
+      mat-stroked-button
+      disableRipple
+      class="cta-button"
+      routerLink="."
+      disabled
+      >Link</a
+    >
+  </div>
+
+  <h3>Basic Buttons (tertiary style)</h3>
+  <div class="button-row">
+    <button mat-button disableRipple class="cta-button">Basic</button>
+    <button mat-button disableRipple class="cta-button" color="primary">
+      Primary
+    </button>
+    <button mat-button disableRipple class="cta-button" color="accent">
+      Accent
+    </button>
+    <button mat-button disableRipple class="cta-button" disabled>
+      Disabled
+    </button>
+    <a mat-button disableRipple class="cta-button" routerLink=".">Link</a>
+  </div>
+
+  <h4>Small</h4>
+  <div class="button-row">
+    <button mat-button disableRipple class="cta-button cta-button-small">
+      Basic
+    </button>
+    <button
+      mat-button
+      disableRipple
+      class="cta-button cta-button-small"
+      color="primary"
+    >
+      Primary
+    </button>
+    <button
+      mat-button
+      disableRipple
+      class="cta-button cta-button-small"
+      color="accent"
+    >
+      Accent
+    </button>
+    <button
+      mat-button
+      disableRipple
+      class="cta-button cta-button-small"
+      disabled
+    >
+      Disabled
+    </button>
+    <a
+      mat-button
+      disableRipple
+      class="cta-button cta-button-small"
+      routerLink="."
+      >Link</a
+    >
+  </div>
+
+  <h3>Button blocks</h3>
+  <div class="button-block-group">
+    <button mat-flat-button disableRipple class="button-block">
+      Label
+    </button>
+    <button mat-flat-button disableRipple class="button-block">
+      Label
+    </button>
+    <button mat-flat-button disableRipple class="button-block">
+      Label
+    </button>
+  </div>
+
+  <h3>Buttons side-by-side</h3>
+  <div class="button-row">
+    <button mat-flat-button disableRipple class="cta-button" color="accent">
+      First
+    </button>
+    <button mat-stroked-button disableRipple class="cta-button" color="primary">
+      I'm just secondary
+    </button>
+    <button mat-button disableRipple class="cta-button" color="primary">
+      Best for third
+    </button>
+  </div>
+</div>
